@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Tracker.css'
 import {UseStateValue} from './Context'
 import {Action} from './Reducer'
@@ -27,6 +27,10 @@ function Tracker() {
         setamount('')
     }
     
+    useEffect(() => {
+       document.title='Finance Tracker'
+    }, [])
+
     return (
         <div className='container'>
             <div className='center-cont'>
