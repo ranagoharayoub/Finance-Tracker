@@ -1,0 +1,271 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.center-cont{
+    margin-top: 0vh;
+    height: 100%;
+    width: 30%;
+    background-color: dimgray;
+
+}
+
+.title{
+    margin-top: 5vh;
+    height: 5vh;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+    
+}
+
+.balance{
+    height: 5vh;
+    background-color: rgb(156, 156, 156);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+    font-weight: 500;
+}
+
+.balance-amount{
+    font-weight: 900;
+    /* color: darkblue; */
+}
+
+.in-ex{
+    height: 15vh;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.income{
+    margin: 5px 0px;
+    width: 30%;
+    background-color: rgb(173, 172, 172);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.income>p{
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.expense{
+    margin: 5px 0px;
+    width: 30%;
+    background-color: rgb(173, 172, 172);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: darkred;
+    font-weight: bold;
+}
+
+.expense>p{
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.trans-history{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(156, 156, 156);
+    
+}
+
+.trans-history>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: larger;
+    margin: 0px 0px;
+}
+
+.overflow{
+    overflow-y: auto;
+}
+
+.trans-detail{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(212, 211, 211);
+    margin: 5px 0px;
+    font-size: medium;
+    font-weight: 600;
+    
+}
+
+.trans-disc{
+    margin-left: 10px;
+}
+
+.trans-amount{
+    margin-right: 5px;
+}
+
+.add-new{
+    height: 20vh;
+    background-color: dimgray;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.add-new>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: 700;
+    margin: 0px 0px;
+}
+
+.add-trans{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(156, 156, 156);
+    font-size: small;
+    font-weight: 500;
+
+    
+}
+
+.add-trans>label{
+    text-align: center;
+}
+
+.add-trans>input{
+    height: 30px;
+    width: 90%;
+    border: none;
+    border-radius: 20px;
+    margin: 5px 10px;
+}
+
+.add-trans>input:focus{
+    outline: none;
+}
+
+.dummy-btn{
+    height: 30px;
+    width: 50%;
+    margin: 10px 10px;
+    border-radius: 20px;
+    border:none;
+    background-color:dimgray;
+    color: olivedrab;
+    font-weight: 600;
+}
+
+.dummy-btn:focus{
+    outline: none;
+}
+
+.active-btn{
+    height: 30px;
+    width: 50%;
+    margin: 10px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    border:none;
+    background-color: rgb(65, 65, 65);
+    color: orange;
+}
+
+.active-btn:focus{
+    outline: none;
+}
+
+@media (max-width: 400px){
+    .title{
+        font-size: small;
+    }
+    .balance{
+        font-size: small;
+        justify-content: space-evenly;
+    }
+
+    .in-ex{
+        font-size: small;
+    }
+
+    .income, .expense{
+        width: 47%;
+        border-radius: 10px;
+
+    }
+    .trans-history{
+        height: 45vh;
+        
+    }
+    .trans-history>p{
+        font-size: small;
+        text-align: center;
+    }
+    .balance-amount{
+        font-size: small;
+        font-weight: 900;
+        /* color: darkblue; */
+    }
+    .trans-detail{
+
+        font-size: small;
+        
+    }
+    .add-new>p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: small;
+        font-weight: 700;
+        margin: 0px 0px;
+    }
+    .add-trans>label{
+        font-size: smaller;
+    }
+
+    .active-btn, .dummy-btn{
+        height: 20px;
+        width: 90%;
+        margin: 5px 10px;
+        border-radius: 15px;
+        font-size: x-small;
+    }
+
+    .add-trans>input{
+        height: 20px;
+        width: 90%;
+        border: none;
+        border-radius: 15px;
+        margin: 5px 10px;
+    }
+    .add-trans>input::placeholder{
+        font-size: xx-small;
+    }
+}
