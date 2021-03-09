@@ -76,7 +76,7 @@ function Tracker() {
                                 <label>Description</label>
                                 <input placeholder='Type here...' value={discription} onChange={e => setdiscription(e.target.value)} type='text'></input>
                                 <label>Amount</label>
-                                <input placeholder='negative for expense ' value={amount} onChange={e => setamount(e.target.value)} type='number'></input>
+                                <input placeholder='Insert negative amount for expense ' value={amount} onChange={e => setamount(e.target.value)} type='number'></input>
                                 {
                                     discription && amount ?
                                     <button className='active-btn' type='submit'>Add Transaction</button>

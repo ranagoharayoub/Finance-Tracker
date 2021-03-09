@@ -206,15 +206,15 @@
         width: 100%;
     }
     .title{
-        font-size: small;
+        font-size: larger;
     }
     .balance{
-        font-size: small;
+        font-size: medium;
         justify-content: space-evenly;
     }
 
     .in-ex{
-        font-size: small;
+        font-size: large;
     }
 
     .income, .expense{
@@ -223,21 +223,21 @@
 
     }
     .trans-history{
-        height: 45vh;
+        height: 40vh;
         
     }
     .trans-history>p{
-        font-size: small;
+        font-size: large;
         text-align: center;
     }
     .balance-amount{
-        font-size: small;
+        font-size: large;
         font-weight: 900;
         /* color: darkblue; */
     }
     .trans-detail{
 
-        font-size: small;
+        font-size: medium;
         
     }
     .add-new>p{
@@ -245,30 +245,30 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        font-size: small;
+        font-size: medium;
         font-weight: 700;
         margin: 0px 0px;
     }
     .add-trans>label{
-        font-size: smaller;
+        font-size: medium;
     }
 
     .active-btn, .dummy-btn{
         height: 20px;
-        width: 90%;
+        width: 50%;
         margin: 5px 10px;
         border-radius: 15px;
         font-size: x-small;
     }
 
     .add-trans>input{
-        height: 20px;
+        height: 25px;
         width: 90%;
         border: none;
         border-radius: 15px;
         margin: 5px 10px;
     }
     .add-trans>input::placeholder{
-        font-size: xx-small;
+        font-size: small;
     }
 }
